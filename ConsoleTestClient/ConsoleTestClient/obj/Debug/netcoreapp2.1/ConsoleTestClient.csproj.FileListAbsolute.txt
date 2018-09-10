@@ -28,3 +28,14 @@ C:\Workspace\WebAPIDemo\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp
 C:\Workspace\WebAPIDemo\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.AssemblyInfo.cs
 C:\Workspace\WebAPIDemo\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.dll
 C:\Workspace\WebAPIDemo\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.pdb
+C:\Workspace\FootprintAPI\Footprint_API\ConsoleTestClient\ConsoleTestClient\bin\Debug\netcoreapp2.1\ConsoleTestClient.deps.json
+C:\Workspace\FootprintAPI\Footprint_API\ConsoleTestClient\ConsoleTestClient\bin\Debug\netcoreapp2.1\ConsoleTestClient.runtimeconfig.json
+C:\Workspace\FootprintAPI\Footprint_API\ConsoleTestClient\ConsoleTestClient\bin\Debug\netcoreapp2.1\ConsoleTestClient.runtimeconfig.dev.json
+C:\Workspace\FootprintAPI\Footprint_API\ConsoleTestClient\ConsoleTestClient\bin\Debug\netcoreapp2.1\ConsoleTestClient.dll
+C:\Workspace\FootprintAPI\Footprint_API\ConsoleTestClient\ConsoleTestClient\bin\Debug\netcoreapp2.1\ConsoleTestClient.pdb
+C:\Workspace\FootprintAPI\Footprint_API\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.csprojAssemblyReference.cache
+C:\Workspace\FootprintAPI\Footprint_API\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.csproj.CoreCompileInputs.cache
+C:\Workspace\FootprintAPI\Footprint_API\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.AssemblyInfoInputs.cache
+C:\Workspace\FootprintAPI\Footprint_API\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.AssemblyInfo.cs
+C:\Workspace\FootprintAPI\Footprint_API\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.dll
+C:\Workspace\FootprintAPI\Footprint_API\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.pdb

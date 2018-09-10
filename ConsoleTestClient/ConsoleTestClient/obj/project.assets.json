@@ -5395,11 +5395,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Workspace\\WebAPIDemo\\ConsoleTestClient\\ConsoleTestClient\\ConsoleTestClient.csproj",
+      "projectUniqueName": "C:\\Workspace\\FootprintAPI\\Footprint_API\\ConsoleTestClient\\ConsoleTestClient\\ConsoleTestClient.csproj",
       "projectName": "ConsoleTestClient",
-      "projectPath": "C:\\Workspace\\WebAPIDemo\\ConsoleTestClient\\ConsoleTestClient\\ConsoleTestClient.csproj",
+      "projectPath": "C:\\Workspace\\FootprintAPI\\Footprint_API\\ConsoleTestClient\\ConsoleTestClient\\ConsoleTestClient.csproj",
       "packagesPath": "C:\\Users\\Kevin Xu\\.nuget\\packages\\",
-      "outputPath": "C:\\Workspace\\WebAPIDemo\\ConsoleTestClient\\ConsoleTestClient\\obj\\",
+      "outputPath": "C:\\Workspace\\FootprintAPI\\Footprint_API\\ConsoleTestClient\\ConsoleTestClient\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

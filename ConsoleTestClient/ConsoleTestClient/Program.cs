@@ -16,14 +16,14 @@ namespace ConsoleTestClient
             Uri authorizationServerTokenIssuerUri = new Uri("https://localhost:5002/connect/token");
 
             //Access with a user with full access right.
-            /*string clientId = "ClientIdWithFullAccess";
+            string clientId = "ClientIdWithFullAccess";
             string clientSecret = "secret2";
-            string scope = "scope.fullaccess";*/
+            string scope = "scope.fullaccess";
 
             //Access with a user with read only access right.
-            string clientId = "ClientIdThatCanOnlyRead";
+            /*string clientId = "ClientIdThatCanOnlyRead";
             string clientSecret = "secret1";
-            string scope = "scope.readaccess";
+            string scope = "scope.readaccess"*/;
 
             //send access token request
             string rawJwtToken = RequestTokenToAuthorizationServer(

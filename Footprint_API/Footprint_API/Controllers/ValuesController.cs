@@ -2,24 +2,33 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Footprint_API.Controllers
+namespace ProtectedWebAPI.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
+    //[Authorize]
     public class ValuesController : ControllerBase
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        [Authorize("Fullaccess")]
+        public IEnumerable<string> Get()
         {
+            //this is a basic code snippet to validate the scope inside the API
+            /*bool userHasRightScope = User.HasClaim("scope", "scope.fullaccess");
+            if (userHasRightScope == false)
+            {
+                return new string[] { "Access denied" };
+            }*/
+
             return new string[] { "value1", "value2" };
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public string Get(int id)
         {
             return "value";
         }
