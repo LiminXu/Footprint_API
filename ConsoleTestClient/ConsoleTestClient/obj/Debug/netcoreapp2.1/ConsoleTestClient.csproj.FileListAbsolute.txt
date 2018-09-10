@@ -1,0 +1,30 @@
+C:\Users\Kevin Xu\Source\Repos\ConsoleTestClient\ConsoleTestClient\bin\Debug\netcoreapp2.1\ConsoleTestClient.deps.json
+C:\Users\Kevin Xu\Source\Repos\ConsoleTestClient\ConsoleTestClient\bin\Debug\netcoreapp2.1\ConsoleTestClient.runtimeconfig.json
+C:\Users\Kevin Xu\Source\Repos\ConsoleTestClient\ConsoleTestClient\bin\Debug\netcoreapp2.1\ConsoleTestClient.runtimeconfig.dev.json
+C:\Users\Kevin Xu\Source\Repos\ConsoleTestClient\ConsoleTestClient\bin\Debug\netcoreapp2.1\ConsoleTestClient.dll
+C:\Users\Kevin Xu\Source\Repos\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.csprojAssemblyReference.cache
+C:\Users\Kevin Xu\Source\Repos\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Xu\Source\Repos\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.AssemblyInfoInputs.cache
+C:\Users\Kevin Xu\Source\Repos\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.AssemblyInfo.cs
+C:\Workspace\WebAPITutorial\ConsoleTestClient\ConsoleTestClient\bin\Debug\netcoreapp2.1\ConsoleTestClient.deps.json
+C:\Workspace\WebAPITutorial\ConsoleTestClient\ConsoleTestClient\bin\Debug\netcoreapp2.1\ConsoleTestClient.runtimeconfig.json
+C:\Workspace\WebAPITutorial\ConsoleTestClient\ConsoleTestClient\bin\Debug\netcoreapp2.1\ConsoleTestClient.runtimeconfig.dev.json
+C:\Workspace\WebAPITutorial\ConsoleTestClient\ConsoleTestClient\bin\Debug\netcoreapp2.1\ConsoleTestClient.dll
+C:\Workspace\WebAPITutorial\ConsoleTestClient\ConsoleTestClient\bin\Debug\netcoreapp2.1\ConsoleTestClient.pdb
+C:\Workspace\WebAPITutorial\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.csprojAssemblyReference.cache
+C:\Workspace\WebAPITutorial\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.csproj.CoreCompileInputs.cache
+C:\Workspace\WebAPITutorial\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.AssemblyInfoInputs.cache
+C:\Workspace\WebAPITutorial\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.AssemblyInfo.cs
+C:\Workspace\WebAPITutorial\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.dll
+C:\Workspace\WebAPITutorial\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.pdb
+C:\Workspace\WebAPIDemo\ConsoleTestClient\ConsoleTestClient\bin\Debug\netcoreapp2.1\ConsoleTestClient.deps.json
+C:\Workspace\WebAPIDemo\ConsoleTestClient\ConsoleTestClient\bin\Debug\netcoreapp2.1\ConsoleTestClient.runtimeconfig.json
+C:\Workspace\WebAPIDemo\ConsoleTestClient\ConsoleTestClient\bin\Debug\netcoreapp2.1\ConsoleTestClient.runtimeconfig.dev.json
+C:\Workspace\WebAPIDemo\ConsoleTestClient\ConsoleTestClient\bin\Debug\netcoreapp2.1\ConsoleTestClient.dll
+C:\Workspace\WebAPIDemo\ConsoleTestClient\ConsoleTestClient\bin\Debug\netcoreapp2.1\ConsoleTestClient.pdb
+C:\Workspace\WebAPIDemo\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.csprojAssemblyReference.cache
+C:\Workspace\WebAPIDemo\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.csproj.CoreCompileInputs.cache
+C:\Workspace\WebAPIDemo\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.AssemblyInfoInputs.cache
+C:\Workspace\WebAPIDemo\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.AssemblyInfo.cs
+C:\Workspace\WebAPIDemo\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.dll
+C:\Workspace\WebAPIDemo\ConsoleTestClient\ConsoleTestClient\obj\Debug\netcoreapp2.1\ConsoleTestClient.pdb
