@@ -13,6 +13,9 @@ using System.IO;
 
 namespace Footprint_API.Services
 {
+    /// <summary>
+    /// Service handlar for all S3 operations.
+    /// </summary>
     public class S3Service : IS3Service
     {
         private readonly IAmazonS3 _client;

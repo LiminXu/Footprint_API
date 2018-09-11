@@ -11,7 +11,7 @@ namespace Footprint_API.Filters
     {
         public override void OnException(ExceptionContext context)
         {
-            //If ADAL failed to acquire access token
+            // Print out status code and error message after caught an amazon S3 exception.
             if (context.Exception is AmazonS3Exception)
             {
                 AmazonS3Exception e = (AmazonS3Exception)context.Exception;
@@ -20,7 +20,7 @@ namespace Footprint_API.Filters
                     status = e.StatusCode,
                     Message = e.Message
                 });
-            }else if (context.Exception is Exception)
+            }else if (context.Exception is Exception) //Print out status code and error message after caught any exception.
             {
                 context.Result = new JsonResult(new S3Response
                 {

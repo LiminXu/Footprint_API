@@ -40,6 +40,7 @@ namespace Footprint_API
             services.AddSingleton<IS3Service, S3Service>();
             services.AddAWSService<IAmazonS3>();
             services.AddDataProtection();
+
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme =

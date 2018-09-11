@@ -8,12 +8,17 @@ using Microsoft.AspNetCore.Mvc;
 namespace ProtectedWebAPI.Controllers
 {
     [Route("api/[controller]")]
-    //[Authorize]
+    //[Authorize]   // attribute used for authorized the class level.
     public class ValuesController : ControllerBase
     {
-        // GET api/values
+        /// <summary>
+        /// Basic API used in the testing suits
+        /// GET api/values
+        /// </summary>
+        /// <returns>A string array with 2 strings in it. used in demo and unit testing for server authorization.</returns>
+
         [HttpGet]
-        [Authorize("Fullaccess")]
+        [Authorize("Fullaccess")]   // attribute used for authorized the method level.
         public IEnumerable<string> Get()
         {
             //this is a basic code snippet to validate the scope inside the API
