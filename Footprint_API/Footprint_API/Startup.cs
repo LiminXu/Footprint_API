@@ -40,6 +40,7 @@ namespace Footprint_API
             {
                 o.Authority = "https://localhost:5002";
                 //o.Audience = "scope.readaccess";
+                o.SaveToken = true;
                 o.RequireHttpsMetadata = false;
                 o.TokenValidationParameters = new TokenValidationParameters
                 {

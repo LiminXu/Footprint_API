@@ -10,7 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using AuthorizationServer.Models;
+using AuthenticationServer.Models;
 
 namespace AuthenticationServer
 {
@@ -36,8 +36,9 @@ namespace AuthenticationServer
             // configure identity server with in-memory stores, keys, clients and scopes
             services.AddIdentityServer()
               .AddDeveloperSigningCredential()
-              .AddInMemoryApiResources(AuthorizationServer.Models.Configure.GetApiResources())
-              .AddInMemoryClients(AuthorizationServer.Models.Configure.GetClients());
+              .AddInMemoryApiResources(AuthenticationServer.Models.Configure.GetApiResources())
+              .AddInMemoryClients(AuthenticationServer.Models.Configure.GetClients());
+
 
             //add framework services
             services.AddMvc();

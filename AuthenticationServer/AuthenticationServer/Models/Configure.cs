@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AuthorizationServer.Models
+namespace AuthenticationServer.Models
 {
     public class Configure
     {
@@ -28,23 +28,34 @@ namespace AuthorizationServer.Models
                 {
                     ClientId = "ClientIdThatCanOnlyRead",
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
-
+                    AccessTokenLifetime = 10,
+                    IdentityTokenLifetime = 10,
                     ClientSecrets =
                     {
                         new Secret("secret1".Sha256())
                     },
-                    AllowedScopes = { "scope.readaccess" }
+                    AllowedScopes = { "scope.readaccess" },
+                    RequireConsent = false,
+                    AllowOfflineAccess = true,
+                    RefreshTokenUsage = TokenUsage.ReUse,
+                    UpdateAccessTokenClaimsOnRefresh = true
+
                 },
                 new Client
                 {
                     ClientId = "ClientIdWithFullAccess",
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
-
+                    AccessTokenLifetime = 10,
+                    IdentityTokenLifetime = 10,
                     ClientSecrets =
                     {
                         new Secret("secret2".Sha256())
                     },
-                    AllowedScopes = { "scope.fullaccess" }
+                    AllowedScopes = { "scope.fullaccess" },
+                    RequireConsent = false,
+                    AllowOfflineAccess = true,
+                    RefreshTokenUsage = TokenUsage.ReUse,
+                    UpdateAccessTokenClaimsOnRefresh = true
                 }
 
             };
