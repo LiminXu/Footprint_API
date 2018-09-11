@@ -24,7 +24,7 @@ namespace ConsoleTestClient.Tests
             string clientId = "ClientIdWithFullAccess";
             string clientSecret = "secret2";
             string scope = "scope.fullaccess";
-            string api = "https://localhost:5001/api/values";
+            string api = "http://localhost:5001/api/values";
             string correctResult = "[\"value1\",\"value2\"]";
             string result = "";
 
@@ -47,7 +47,7 @@ namespace ConsoleTestClient.Tests
             string clientId = "ClientIdWithFullAccess";
             string clientSecret = "secret1";
             string scope = "scope.fullaccess";
-            string api = "https://localhost:5001/api/values";
+            string api = "http://localhost:5001/api/values";
             string correctResult = "Status Code: 401; Unauthorized";
             string result = "";
 
@@ -70,7 +70,7 @@ namespace ConsoleTestClient.Tests
             string clientId = "ClientIdWithFullAccess";
             string clientSecret = "secret2";
             string scope = "scope.fullaccess";
-            string api = "https://localhost:5001/api/values";
+            string api = "http://localhost:5001/api/values";
             string correctResult = "Status Code: 401; Unauthorized";
             string result = "";
 
@@ -93,7 +93,7 @@ namespace ConsoleTestClient.Tests
             string clientId = "ClientIdThatCanOnlyRead";
             string clientSecret = "secret1";
             string scope = "scope.readaccess";
-            string api = "https://localhost:5001/api/values";
+            string api = "http://localhost:5001/api/values";
             string correctResult = "Status Code: 403; Forbidden";
             string result = "";
 
@@ -116,7 +116,7 @@ namespace ConsoleTestClient.Tests
             string clientId = "ClientIdWithFullAccess";
             string clientSecret = "secret2";
             string scope = "scope.fullaccess";
-            string api = "https://localhost:5001/api/values";
+            string api = "http://localhost:5001/api/values";
             string correctResult = "Status Code: 401; Unauthorized";
             string result = "";
 

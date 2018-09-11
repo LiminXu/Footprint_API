@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "40ef13bcbf3999312d869f3d526ed3736854bdb9"
+    "signature": "3d9ab8438215febdddf839b5e4a63ab522ea12dd"
   },
   "compilationOptions": {
     "defines": [
@@ -24,8 +24,11 @@
     ".NETCoreApp,Version=v2.1": {
       "Footprint_API/1.0.0": {
         "dependencies": {
+          "AWSSDK.Extensions.NETCore.Setup": "3.3.6",
+          "AWSSDK.S3": "3.3.23.2",
           "IdentityServer4.AccessTokenValidation": "2.6.0",
           "Microsoft.AspNetCore.App": "2.1.1",
+          "Microsoft.IdentityModel.Clients.ActiveDirectory": "3.19.8",
           "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1"
         },
@@ -34,6 +37,55 @@
         },
         "compile": {
           "Footprint_API.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.3.25.3": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Net.Requests": "4.0.11",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Security.Cryptography.Csp": "4.3.0",
+          "System.Threading.Thread": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.25.3"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.Extensions.NETCore.Setup/3.3.6": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.25.3",
+          "Microsoft.Extensions.Configuration.Abstractions": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Microsoft.Extensions.Logging.Abstractions": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.Extensions.NETCore.Setup.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.6.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.Extensions.NETCore.Setup.dll": {}
+        }
+      },
+      "AWSSDK.S3/3.3.23.2": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.25.3"
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.23.2"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.S3.dll": {}
         }
       },
       "IdentityModel/3.6.0": {
@@ -117,6 +169,27 @@
         },
         "compile": {
           "lib/netstandard1.3/Microsoft.CodeAnalysis.Workspaces.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Clients.ActiveDirectory/3.19.8": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "System.Runtime.Serialization.Json": "4.3.0",
+          "System.Runtime.Serialization.Primitives": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll": {
+            "assemblyVersion": "3.19.8.16603",
+            "fileVersion": "3.19.50615.2240"
+          },
+          "lib/netstandard1.3/Microsoft.IdentityModel.Clients.ActiveDirectory.dll": {
+            "assemblyVersion": "3.19.8.16603",
+            "fileVersion": "3.19.50615.2240"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll": {},
+          "lib/netstandard1.3/Microsoft.IdentityModel.Clients.ActiveDirectory.dll": {}
         }
       },
       "Microsoft.NETCore.App/2.1.0": {
@@ -559,6 +632,48 @@
           "System.Runtime.Extensions": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Threading.Tasks": "4.3.0"
+        }
+      },
+      "System.Net.Requests/4.0.11": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.1.0",
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Diagnostics.Tracing": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Net.Http": "4.3.0",
+          "System.Net.Primitives": "4.3.0",
+          "System.Net.WebHeaderCollection": "4.0.1",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Tasks": "4.3.0"
+        },
+        "runtimeTargets": {
+          "runtime/unix/lib/_._": {
+            "rid": "unix",
+            "assetType": "runtime"
+          },
+          "runtime/win/lib/_._": {
+            "rid": "win",
+            "assetType": "runtime"
+          }
+        }
+      },
+      "System.Net.WebHeaderCollection/4.0.1": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0"
+        }
+      },
+      "System.Runtime.Serialization.Json/4.3.0": {
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Private.DataContractSerialization": "4.3.0",
+          "System.Runtime": "4.3.0"
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3512,6 +3627,27 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AWSSDK.Core/3.3.25.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Q9WHx2pbAQUdE7jakbLoPftgSxHfSqEdH5jeUBC/ZtoTvRA1hgGZDvzfbWHM/gROBlIX8x97N420twNX65Mc9g==",
+      "path": "awssdk.core/3.3.25.3",
+      "hashPath": "awssdk.core.3.3.25.3.nupkg.sha512"
+    },
+    "AWSSDK.Extensions.NETCore.Setup/3.3.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vGAUQtMHYUzSN4PuKHdBrgw79AXt8Fw7jSsRjZiSit/5VwJV6x4o4ZNcVNDrtUOE76rE695hMCIzr0pONS3FuQ==",
+      "path": "awssdk.extensions.netcore.setup/3.3.6",
+      "hashPath": "awssdk.extensions.netcore.setup.3.3.6.nupkg.sha512"
+    },
+    "AWSSDK.S3/3.3.23.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yfzHyFog4CXP2v/srqCp8R8I6G76tlWuxj3ciEuRDt91V36isRvBvPjpdLYBAiBVMH3KAll/7sVO1bH13ySLSw==",
+      "path": "awssdk.s3/3.3.23.2",
+      "hashPath": "awssdk.s3.3.3.23.2.nupkg.sha512"
+    },
     "IdentityModel/3.6.0": {
       "type": "package",
       "serviceable": true,
@@ -3546,6 +3682,13 @@
       "sha512": "sha512-xt6VmGncJW14z3O0/k7+0cO8w9tB3O6CUL6sM6LesgGmD6zZPbWKY9KpRgV7RewA1flLuXBaUknRjwj0kLA6/g==",
       "path": "microsoft.codeanalysis.workspaces.common/2.8.0",
       "hashPath": "microsoft.codeanalysis.workspaces.common.2.8.0.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Clients.ActiveDirectory/3.19.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DC/k/yfpKvYVUtnnSQaTLFi4bJrWUM//TiWYqb0XC1wSgitZv0IK1PjPzd9Zk9BwwnlBteXKH39JX/Adc2S4ZA==",
+      "path": "microsoft.identitymodel.clients.activedirectory/3.19.8",
+      "hashPath": "microsoft.identitymodel.clients.activedirectory.3.19.8.nupkg.sha512"
     },
     "Microsoft.NETCore.App/2.1.0": {
       "type": "package",
@@ -3707,6 +3850,27 @@
       "sha512": "sha512-td7x21K8LalpjTWCzW/nQboQIFbq9i0r+PCyBBCdLWWnm4NBcdN18vpz/G9hCpUaCIfRL+ZxJNVTywlNlB1aLQ==",
       "path": "system.linq.parallel/4.3.0",
       "hashPath": "system.linq.parallel.4.3.0.nupkg.sha512"
+    },
+    "System.Net.Requests/4.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vxGt7C0cZixN+VqoSW4Yakc1Y9WknmxauDqzxgpw/FnBdz4kQNN51l4wxdXX5VY1xjqy//+G+4CvJWp1+f+y6Q==",
+      "path": "system.net.requests/4.0.11",
+      "hashPath": "system.net.requests.4.0.11.nupkg.sha512"
+    },
+    "System.Net.WebHeaderCollection/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XX2TIAN+wBSAIV51BU2FvvXMdstUa8b0FBSZmDWjZdwUMmggQSifpTOZ5fNH20z9ZCg2fkV1L5SsZnpO2RQDRQ==",
+      "path": "system.net.webheadercollection/4.0.1",
+      "hashPath": "system.net.webheadercollection.4.0.1.nupkg.sha512"
+    },
+    "System.Runtime.Serialization.Json/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CpVfOH0M/uZ5PH+M9+Gu56K0j9lJw3M+PKRegTkcrY/stOIvRUeonggxNrfBYLA5WOHL2j15KNJuTuld3x4o9w==",
+      "path": "system.runtime.serialization.json/4.3.0",
+      "hashPath": "system.runtime.serialization.json.4.3.0.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",

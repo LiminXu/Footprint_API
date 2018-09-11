@@ -12,7 +12,7 @@ namespace ConsoleTestClient.Services
     {
         //authorization server parameters owned from the client
         //this values are issued from the authorization server to the client through a separate process (registration, etc...)
-        Uri authorizationServerTokenIssuerUri = new Uri("https://localhost:5002/connect/token");
+        Uri authorizationServerTokenIssuerUri = new Uri("http://localhost:5002/connect/token");
 
         public string LogginToAPI(string clientId, string clientSecret, string scope, string api)
         {
@@ -99,7 +99,7 @@ namespace ConsoleTestClient.Services
                 authorizationServerToken = Newtonsoft.Json.JsonConvert.DeserializeObject<AuthorizationServerAnswer>(rawJwtToken);
                 Console.WriteLine("Token: " + authorizationServerToken.access_token);
                 Console.WriteLine("Token expires after: " + authorizationServerToken.expires_in + " seconds.");
-                Task.Delay(310000).Wait();
+                Task.Delay(20000).Wait();
                 //invoke secured web api request with security token
                 string response = RequestValuesToSecuredWebApi(authorizationServerToken, api)
                     .GetAwaiter()

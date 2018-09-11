@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Amazon.S3;
+using Footprint_API.Filters;
+using Footprint_API.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -6,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 
@@ -28,8 +32,14 @@ namespace Footprint_API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
-
+            services.AddMvc(opts =>
+            {
+                opts.Filters.Add(typeof(AdalTokenAcquisitionExceptionFilter));
+                opts.Filters.Add(typeof(AmazonS3ExceptionFilter));
+            });
+            services.AddSingleton<IS3Service, S3Service>();
+            services.AddAWSService<IAmazonS3>();
+            services.AddDataProtection();
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme =
@@ -38,7 +48,7 @@ namespace Footprint_API
                                            JwtBearerDefaults.AuthenticationScheme;
             }).AddJwtBearer(o =>
             {
-                o.Authority = "https://localhost:5002";
+                o.Authority = "http://localhost:5002";
                 //o.Audience = "scope.readaccess";
                 o.SaveToken = true;
                 o.RequireHttpsMetadata = false;
@@ -50,7 +60,9 @@ namespace Footprint_API
                         "scope.readaccess",
                         "scope.fullaccess"
                     },
-                    ValidateIssuer = true
+                    ValidateIssuer = true,
+                    ValidateLifetime = true,
+                    ClockSkew = TimeSpan.FromMinutes(0)
                 };
             });
 

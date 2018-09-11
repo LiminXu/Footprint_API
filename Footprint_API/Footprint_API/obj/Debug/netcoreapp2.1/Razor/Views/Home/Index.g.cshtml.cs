@@ -43,7 +43,7 @@ namespace AspNetCore
             WriteLiteral("<html>\r\n");
             EndContext();
             BeginContext(8, 68, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1f5716b1c26e44458d784849937b6879", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d9762f09bc84e68a9262cbb88a0fec6", async() => {
                 BeginContext(14, 55, true);
                 WriteLiteral("\r\n    <title>Footprint Web API. Welcome page.</title>\r\n");
                 EndContext();
@@ -63,7 +63,7 @@ namespace AspNetCore
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(78, 71, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd0cb495e24f4ae88cd07afd88e91794", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3dde8f2da98d4d8fa28ea7f08f7b7690", async() => {
                 BeginContext(84, 58, true);
                 WriteLiteral("\r\n    <h1>Footprint Web API is runing on Port 5001.</h1>\r\n");
                 EndContext();

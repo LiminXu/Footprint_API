@@ -28,8 +28,8 @@ namespace AuthenticationServer.Models
                 {
                     ClientId = "ClientIdThatCanOnlyRead",
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
-                    AccessTokenLifetime = 10,
-                    IdentityTokenLifetime = 10,
+                    AccessTokenLifetime = 3600,
+                    IdentityTokenLifetime = 3600,
                     ClientSecrets =
                     {
                         new Secret("secret1".Sha256())
@@ -45,8 +45,8 @@ namespace AuthenticationServer.Models
                 {
                     ClientId = "ClientIdWithFullAccess",
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
-                    AccessTokenLifetime = 10,
-                    IdentityTokenLifetime = 10,
+                    AccessTokenLifetime = 3600,
+                    IdentityTokenLifetime = 3600,
                     ClientSecrets =
                     {
                         new Secret("secret2".Sha256())
